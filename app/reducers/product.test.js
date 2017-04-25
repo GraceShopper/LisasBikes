@@ -79,7 +79,7 @@ describe('Product reducer', () => {
     })
 })
 
-describe.only('AllProducts Component', () => {
+describe('AllProducts Component', () => {
   let products = [
 {
 id: 1,
