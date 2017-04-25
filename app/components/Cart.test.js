@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 import { Cart } from './Cart'
 import Item from './Item'
 
-describe.only('<Cart />', () => {
+describe('<Cart />', () => {
 
   describe('visual content', function() {
 

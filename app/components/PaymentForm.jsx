@@ -2,6 +2,7 @@ import React from 'react'
 import { login } from 'APP/app/reducers/auth'
 import { connect } from 'react-redux'
 import store from 'App/app/store'
+import { Link } from 'react-router'
 
 export default (props) => {
   return (
@@ -38,7 +39,7 @@ export default (props) => {
         </div>
         <div className="form-group">
           <div className="col-xs-10 col-xs-offset-4">
-            <button disabled={ props.methods.shouldBeDisabled } type="submit"
+            <button to='/Success' disabled={ props.methods.shouldBeDisabled } type="submit"
             className="btn btn-success">Place Order</button>
           </div>
         </div>

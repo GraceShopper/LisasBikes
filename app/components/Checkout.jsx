@@ -1,6 +1,7 @@
 import React from 'react'
 import { login } from 'APP/app/reducers/auth'
 import { connect } from 'react-redux'
+import { browserHistory } from 'react-router'
 import store from 'App/app/store'
 
 import ShippingForm from './ShippingForm'
@@ -28,7 +29,6 @@ class Checkout extends React.Component {
   }
 
   handleSubmit(evt) {
-    console.log('made it to submit')
     evt.preventDefault()
 
     this.setState({
@@ -45,7 +45,7 @@ class Checkout extends React.Component {
       shouldBeDisabled: true,
     })
 
-    console.log(this.state)
+    browserHistory.push('/confirmation')
   }
 
   handleChange(e) {
@@ -69,8 +69,6 @@ class Checkout extends React.Component {
       handleSubmit: this.handleSubmit,
       shouldBeDisabled: this.state.shouldBeDisabled
     }
-
-    console.log('this.state in render:', this.state)
 
     return (
       <div>

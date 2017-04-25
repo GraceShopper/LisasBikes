@@ -32,7 +32,7 @@ import { fetchSingleProduct } from './reducers/product'
 
 // checkout imports
 import Checkout from './components/Checkout'
-
+import Confirmation from './components/Confirmation'
 
 // Authentication Imports
 import Authenticate from './components/Authenticate'
@@ -113,6 +113,7 @@ render(
         <Route path="/orders/:id" component={ EmptyApp } />
         <Route path="/authenticate" component={ Authenticate } />
         <Route path="/checkout" component={ Checkout } />
+        <Route path="/confirmation" component={ Confirmation } />
         <IndexRoute component={ Home } />
       </Route>
       <Route path='*' component={ NotFound } />

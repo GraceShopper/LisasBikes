@@ -53,7 +53,7 @@ export class Cart extends React.Component {
                 <td />
                 <td className='text-center'> ${this.calculateTotal()}</td>
                 <td className='text-center'>
-                  <a id='checkout' className="btn btn-default">Checkout</a>
+                  <Link to='/checkout' className="btn btn-default">Checkout</Link>
                 </td>
               </tr>
             </tfoot>
