@@ -30,6 +30,9 @@ import Cart from './components/Cart'
 import { setCurrentOrder, fetchSessionOrder, mergeCurrentOrder } from './reducers/order'
 import { fetchSingleProduct } from './reducers/product'
 
+// checkout imports
+import Checkout from './components/Checkout'
+
 
 // Authentication Imports
 import Authenticate from './components/Authenticate'
@@ -109,6 +112,7 @@ render(
         <Route path="/orders" component={ EmptyApp } />
         <Route path="/orders/:id" component={ EmptyApp } />
         <Route path="/authenticate" component={ Authenticate } />
+        <Route path="/checkout" component={ Checkout } />
         <IndexRoute component={ Home } />
       </Route>
       <Route path='*' component={ NotFound } />
